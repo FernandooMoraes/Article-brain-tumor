@@ -6,7 +6,7 @@ import cv2
 import imutils
 
 # Load the trained VGG16 model
-model = keras.models.load_model('tumorceb.h5')
+model = keras.models.load_model('https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5')
 
 # Set the title of the application
 st.title("Automatic Tumor Detection using VGG16")
