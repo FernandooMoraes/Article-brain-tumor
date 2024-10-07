@@ -1,0 +1,6 @@
+numpy
+streamlit
+tensorflow==2.17.0
+keras==3.6.0
+opencv-python
+imutils
