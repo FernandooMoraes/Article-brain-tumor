@@ -5,6 +5,7 @@ from PIL import Image
 import cv2
 import imutils
 import os
+import requests
 
 # Define the URL of the model
 model_url = 'https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5'
