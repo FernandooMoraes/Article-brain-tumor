@@ -8,7 +8,7 @@ import os
 import requests
 
 # Define the URL of the model
-model_url = 'https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5'
+model_url = 'https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5?raw=true'
 
 # Define a local path to save the model
 model_path = 'tumorceb.h5'
