@@ -2,6 +2,5 @@ numpy
 streamlit
 tensorflow==2.17.0
 keras==3.6.0
-opencv-python==4.5.5.62
+opencv-python-headless
 imutils
-libgl1-mesa-glx
