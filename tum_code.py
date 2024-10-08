@@ -7,19 +7,7 @@ import imutils
 import os
 import requests
 
-# Define the URL of the model
-model_url = 'https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5?raw=true'
-
-# Define a local path to save the model
-model_path = 'tumorceb.h5'
-
-# Download the model file from the URL if it doesn't exist
-if not os.path.exists(model_path):
-    response = requests.get(model_url)
-    with open(model_path, 'wb') as f:
-        f.write(response.content)
-
-# Load the model
+model_path = 'https://github.com/FernandooMoraes/Article-brain-tumor/blob/main/tumorceb.h5'
 model = keras.models.load_model(model_path)
 
 # Set the title of the application
