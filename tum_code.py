@@ -3,7 +3,7 @@ from tensorflow import keras
 import numpy as np
 from PIL import Image
 import cv2
-import imutils
+#import imutils
 import os
 import requests
 
@@ -45,7 +45,7 @@ def prepare_image(img):
     thresh = cv2.dilate(thresh, None, iterations=2)
 
     cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    cnts = imutils.grab_contours(cnts)
+    cnts = cnts[0] if len(cnts) == 2 else cnts[1]
     
     # Avoid error if no contours are found
     if not cnts:
